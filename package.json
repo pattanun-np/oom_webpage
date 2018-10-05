@@ -1,0 +1,28 @@
+{
+  "name": "oomim",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "react": "^16.5.2",
+    "react-animated-css": "^1.0.4",
+    "react-animated-slider": "^1.1.3",
+    "react-awesome-button": "^5.0.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "react-image-gallery": "^0.8.11",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-snowstorm": "0.0.2",
+    "react-twitter-embed": "^1.2.0",
+    "react-youtube": "^7.7.0",
+    "reactstrap": "^6.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

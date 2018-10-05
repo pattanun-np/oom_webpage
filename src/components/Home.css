@@ -1,0 +1,61 @@
+.head{
+ color: rgba(76, 175, 80, 0.7);
+text-align: left;
+font-family:Pacifico;
+}
+.text{
+
+  color: #00c853 ;
+  text-align: left;
+  font-family: Kanit;
+  margin-left: 20px;
+
+}
+.text1{
+
+  color: white;
+  text-align: center;
+  border: 100px;
+
+  font-family: Kanit;
+}
+.text2{
+
+  color: white;
+  text-align: center;
+
+
+  font-family: Kanit;
+}
+.color{
+  padding: 10px;
+  color:rgb(189, 96, 151);
+  font-family: Pacifico;
+  text-shadow:10px;
+
+}
+.names{
+
+  text-align: center;
+
+
+  font-family:Kanit;
+}
+.BTN{
+
+display: inline-block;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+margin-bottom: 50px;
+margin-left: 50px;
+}
+.BTN:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

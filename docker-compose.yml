@@ -1,0 +1,12 @@
+version : "2"
+
+services:
+  app:
+    build:
+      context: .
+      port :
+        - "3000:5000"
+      volumes:
+        - .:/usr/scr/app
+      environment:
+        DIDYOUSEE: hello-world  

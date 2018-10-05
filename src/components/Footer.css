@@ -1,0 +1,11 @@
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: Kanit;
+  padding: 27px 0;
+  background: radial-gradient(circle, rgba(94,221,54,1) 0%, rgba(138,237,43,1) 37%, rgba(171,240,58,1) 100%);
+  }
