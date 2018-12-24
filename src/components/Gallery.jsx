@@ -227,8 +227,13 @@ export default class News extends Component {
     },  {
         original: 'Image/64.jpg',
         thumbnail: 'Image/64.jpg'
-      }
-
+    },  {
+        original: 'Image/65.jpg',
+        thumbnail: 'Image/65.jpg'
+    },  {
+        original: 'Image/66.jpg',
+        thumbnail: 'Image/66.jpg'
+    }
   ]
     return(
      <div>
