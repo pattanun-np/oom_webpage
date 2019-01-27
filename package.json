@@ -24,5 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/pattaunNP/oom_webpage.git",
+  "author": "PattanunNP <phattanun19@hotmail.com>",
+  "license": "MIT"
 }
