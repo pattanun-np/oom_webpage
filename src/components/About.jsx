@@ -1,7 +1,9 @@
 import React, {Component} from "react"
 import { Animated} from "react-animated-css";
 import { Image,  Carousel} from 'react-bootstrap';
-
+import Navbar from './CustomNavbar';
+import SnowStorm from 'react-snowstorm';
+import FooterPage from './Footer';
 
 export default class About extends Component {
   render() {
@@ -10,7 +12,7 @@ export default class About extends Component {
   
     <SnowStorm />
     <Navbar />
-    <FooterPage />
+
        <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
            <div>
                 <img width={320} height={250} alt="" src="favicon.ico" align="left" href="/"/>
@@ -69,6 +71,7 @@ export default class About extends Component {
              </Carousel>
            </div>
            </Animated>
+           <FooterPage />
      </div>
    );
   }

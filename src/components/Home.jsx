@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import {Grid, Row,  Image,  Carousel, Media,  } from 'react-bootstrap';
 import './Home.css'
 import {Animated} from "react-animated-css";
-import Navbar from './components/CustomNavbar';
+import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
-import FooterPage from './components/Footer';
+import FooterPage from './Footer';
 
 export default class  Home extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class  Home extends Component {
 <div>
          <SnowStorm />
          <Navbar />
-         <FooterPage />
+     
 
   <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
 <div>
@@ -72,7 +72,7 @@ export default class  Home extends Component {
   </div>
       </Row>
     </Grid>
-  
+    <FooterPage />
      
 </div>
 );

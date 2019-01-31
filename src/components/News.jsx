@@ -1,7 +1,9 @@
 import React, {Component} from "react"
 import {Grid, Row, Col,  Thumbnail  } from 'react-bootstrap';
 import {Animated} from "react-animated-css";
-
+import Navbar from './CustomNavbar';
+import SnowStorm from 'react-snowstorm';
+import FooterPage from './Footer';
 export default class News extends Component {
   render() {
     return(
@@ -9,7 +11,7 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
-    <FooterPage />
+
        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div>
                     <h1 className="text"> OOMIM NEWS</h1>
@@ -69,6 +71,7 @@ export default class News extends Component {
       </Animated>
     </Row>
   </Grid>;
+  <FooterPage />
      </div>
 
    );
