@@ -57,7 +57,8 @@ export default class  Home extends Component {
         <h2 className="text">  Favourite Color : ขาว ชมพู</h2>
         <h2 className="text">  Like : ไอศครีม</h2>
         <h2 className="text">  Blood Group : O</h2>
-        <h2 className="text">   Hobby : อ่านหนังสือ ทำสวน....</h2>
+        <h2 className="text">   Hobby : อ่านหนังสือ ทำสวน....
+        </h2>
          <a href="https://www.facebook.com/bnk48official.oom/">
         <Image className="BTN" width={60} height={60} alt="50x50" src="Image/FB.png" rounded/>
          </a>
