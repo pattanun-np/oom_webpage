@@ -1,4 +1,4 @@
-From node:9.4.0
+From node:11.8.0
 ENV NPM_CONFIG_LOGLEVEL warn
 RUN mkdir -p /application
 
