@@ -69,6 +69,21 @@ export default class News extends Component {
             </Col>
           </div>
       </Animated>
+
+      <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
+          <div>
+            <Col xs={6} md={4}>
+              <Thumbnail src="Image/election.jpg" alt="242x200">
+                <h3 className="text">ร่วมยินดีกับผลเลือกตั้งของคุณอุ้ม</h3>
+                <p>【อันดับที่ 27】</p>
+                <p>เมื่อ 26 มกราคมที่ผ่านมาในงานประการผลการเลือกตั้ง BNK48GenneralElection 
+                  คุณอุ้มของพวกเราคว้าอันดับที่ 27 ขอบคุณทุกคะแนนโหวตทั้งจากกิจกรรมปาสลิป และ การโหวตแบบปกติ 
+                </p>
+              </Thumbnail>
+            </Col>
+          </div>
+      </Animated>
+
     </Row>
   </Grid>;
   <FooterPage />
