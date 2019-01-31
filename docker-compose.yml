@@ -1,10 +1,14 @@
-version: "3"
+version: '3.5'
 
 services:
-  oom-font-end:
-    container_name: "oom-font-end"
-    image: "oom-font-end:latest"
-    build: .
+
+  sample-app:
+    container_name: sample-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
     ports:
-      - "5000:5000"
-    
+      - '5000:3000'
