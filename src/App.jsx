@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import Navbar from './components/CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './components/Footer';
+
 class App extends Component {
   render() {
 
@@ -16,8 +17,7 @@ class App extends Component {
                 <Route  exact path="/news" component={News} />
                 <Route  exact path="/gallery" component={Gallery} />
                 <Route  exact path="/about" component={About} />
-                <Route component={NotFoundPage} />
-          </Switch>
+      </Switch>
        <div>
       	<SnowStorm />
          <Navbar />
