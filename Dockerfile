@@ -1,17 +1,17 @@
-From node:9.4.0
-ENV NPM_CONFIG_LOGLEVEL warn
-RUN mkdir -p /application
+# base image
+FROM node:9.6.1
 
-COPY . /application
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
-WORKDIR /application
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-RUN npm install -g serve
+# install and cache app dependencies
+COPY package.json /usr/src/app/package.json
+RUN npm install --silent
+RUN npm install react-scripts@1.1.1 -g --silent
 
-RUN npm install
-
-RUN npm install --production
-
-CMD serve -s build
-
-EXPOSE 5000
+# start app
+CMD ["npm", "start"]
