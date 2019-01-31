@@ -10,7 +10,6 @@ import FooterPage from './components/Footer';
 
 class App extends Component {
   render() {
-
     return (
       <div>
       <Switch>
@@ -19,9 +18,11 @@ class App extends Component {
                 <Route  exact path="/gallery" component={Gallery} />
                 <Route  exact path="/about" component={About} />
       </Switch>
+      <div>
       	<SnowStorm />
          <Navbar />
          <FooterPage />
+      </div>
        </div>
     );
   }
