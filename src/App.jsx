@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import News from './components/News';
 import Gallery from './components/Gallery';
+import Support from './components/Support';
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
                 <Route  exact path="/news" component={News} />
                 <Route  exact path="/gallery" component={Gallery} />
                 <Route  exact path="/about" component={About} />
+                <Route  exact path="/support" component={Support} />
       </Switch>
    </div>
 
