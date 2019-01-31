@@ -2,8 +2,9 @@ version: '3.5'
 
 services:
 
-  sample-app:
-    container_name: sample-app
+  Oom-font:
+    container_name: "Oom-font"
+    image: "Oom-font:latest"
     build:
       context: .
       dockerfile: Dockerfile
