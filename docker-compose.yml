@@ -1,8 +1,10 @@
-version : "2"
+version: "3"
 
 services:
-  app:
-    build:
-      context: .
+  oom-font-end:
+    container_name: "oom-font-end"
+    image: "oom-font-end:latest"
+    build: .
     ports:
-      -"3000:5000"
+      - "5000:5000"
+    
