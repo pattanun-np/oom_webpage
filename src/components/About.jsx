@@ -7,6 +7,10 @@ export default class About extends Component {
   render() {
     return(
 <div>
+  
+    <SnowStorm />
+    <Navbar />
+    <FooterPage />
        <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
            <div>
                 <img width={320} height={250} alt="" src="favicon.ico" align="left" href="/"/>

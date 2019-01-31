@@ -2,12 +2,18 @@ import React, {Component} from 'react'
 import {Grid, Row,  Image,  Carousel, Media,  } from 'react-bootstrap';
 import './Home.css'
 import {Animated} from "react-animated-css";
-
+import Navbar from './components/CustomNavbar';
+import SnowStorm from 'react-snowstorm';
+import FooterPage from './components/Footer';
 
 export default class  Home extends Component {
   render() {
     return (
 <div>
+         <SnowStorm />
+         <Navbar />
+         <FooterPage />
+         
   <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
 <div>
   <Carousel>
@@ -65,7 +71,8 @@ export default class  Home extends Component {
   </div>
       </Row>
     </Grid>
-
+  
+     
 </div>
 );
   }

@@ -6,6 +6,10 @@ export default class News extends Component {
   render() {
     return(
      <div>
+       
+    <SnowStorm />
+    <Navbar />
+    <FooterPage />
        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div>
                     <h1 className="text"> OOMIM NEWS</h1>

@@ -8,6 +8,7 @@ import   Loader  from './Loader'
 
 export default class News extends Component {
   render() {
+    
     const images = [
     {
       original:  'Image/2.jpg',
@@ -237,6 +238,10 @@ export default class News extends Component {
   ]
     return(
      <div>
+       
+    <SnowStorm />
+    <Navbar />
+    <FooterPage />
        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div class="container-fliud">
                     <h1 className="text"> OOMIM GALLERY </h1>
