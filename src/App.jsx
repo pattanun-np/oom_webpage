@@ -5,18 +5,19 @@ import About from './components/About';
 import News from './components/News';
 import Gallery from './components/Gallery';
 import Support from './components/Support';
-
+import Shop from './components/Shop';
 
 class App extends Component {
   render() {
     return (
     <div>
       <Switch>
-                <Route exact path="/" component={ Home } />
+                <Route  exact path="/" component={ Home } />
                 <Route  exact path="/news" component={News} />
                 <Route  exact path="/gallery" component={Gallery} />
                 <Route  exact path="/about" component={About} />
                 <Route  exact path="/support" component={Support} />
+                <Route  exact path="/shop" component={Shop} />
       </Switch>
    </div>
 
