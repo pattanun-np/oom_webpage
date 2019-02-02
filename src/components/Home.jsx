@@ -13,6 +13,7 @@ export default class  Home extends Component {
 
   <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
 <div>
+  <section className="intro">
   <Carousel>
     <Carousel.Item>
           <img  width={1600} height={900}alt="1600x900" src="Image/2.jpg"/>
@@ -37,6 +38,7 @@ export default class  Home extends Component {
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
+  </section>
 </div>
 </Animated>  
 </div>

@@ -6,7 +6,7 @@ import News from './components/News';
 import Gallery from './components/Gallery';
 import Support from './components/Support';
 import Shop from './components/Shop';
-
+import Login from './components/Login';
 class App extends Component {
   render() {
     return (
@@ -18,6 +18,7 @@ class App extends Component {
                 <Route  exact path="/about" component={About} />
                 <Route  exact path="/support" component={Support} />
                 <Route  exact path="/shop" component={Shop} />
+                <Route  exact path="/login" component={Login} />
       </Switch>
    </div>
 
