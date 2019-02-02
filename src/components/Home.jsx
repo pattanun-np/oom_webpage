@@ -32,10 +32,8 @@ export default class  Home extends Component {
     <Carousel.Item>
       <img class=""width={1600} height={900} alt="900x550" src="Image/oom (3).jpg" />
       <Carousel.Caption>
-        <Grid className="profile">
         <h1 className="text1">Oomim Goods</h1>
         <a className="text1" href="/shop">ซื้อGoods</a>
-        </Grid>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
