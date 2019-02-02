@@ -1,10 +1,12 @@
 import React, {Component} from "react"
 import {Animated} from "react-animated-css";
 import ImageGallery from 'react-image-gallery';
+import {Grid} from 'react-bootstrap';
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
+import './Gallery.css'
 
 export default class News extends Component {
   render() {
@@ -241,17 +243,12 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
- 
-       <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-           <div class="container-fliud">
-                    <h1 className="text"> OOMIM GALLERY </h1>
-           </div>
-       </Animated>
-       <div class="container">
-       <ImageGallery items={images} /></div>
-       <FooterPage />
+       <grid className="container">
+       <ImageGallery items={images} />
+       </grid>
+    <FooterPage />
      </div>
 
-    )
+    );
   }
 }
