@@ -1,13 +1,17 @@
-FROM node:9 as builder
-RUN mkdir /oomweb
-WORKDIR /oomweb
-COPY oom-web .
+# base image
+FROM node:9.6.1
 
-RUN npm install --quiet
-RUN npm run build
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
-# Copy built app into nginx container
-FROM nginx:1.13.5
-COPY --from=builder /oomweb/build /usr/share/nginx/html
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-EXPOSE 80
+# install and cache app dependencies
+COPY package.json /usr/src/app/package.json
+RUN npm install --silent
+RUN npm install react-scripts@1.1.1 -g --silent
+
+# start app
+CMD ["npm", "]
