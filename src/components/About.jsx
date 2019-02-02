@@ -4,7 +4,7 @@ import { Image,  Carousel} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
-
+import './About.css'
 export default class About extends Component {
   render() {
     return(
@@ -12,12 +12,14 @@ export default class About extends Component {
   
     <SnowStorm />
     <Navbar />
-
+     <div id="box">
+     <div className="Img">
        <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
-           <div>
-                <img width={320} height={250} alt="" src="favicon.ico" align="left" href="/"/>
-           </div>
+         
+                <img  width={320} height={250} alt="" src="favicon.ico" align="left" href="/"/>
+           
        </Animated>
+       </div>
        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div>
                 <h1 className="text">พวกเรา คือ ชาวสวนดอกไม้ของคุณอุ้ม</h1>
@@ -31,7 +33,7 @@ export default class About extends Component {
                  </div>
            </Animated>
          <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-             <div class='contianer-fluid'>
+             <div className="contianer-fluid">
                     <a href="https://www.facebook.com/oomimgarden/">
                           <Image className="BTN"width={50} height={50} alt="50x50" src="Image/FB.png" rounded/>
                    </a>
@@ -43,8 +45,10 @@ export default class About extends Component {
                  </a>
              </div>
              </Animated>
+             </div>
+             <div>
              <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
-           <div>
+        
              <Carousel>
                <Carousel.Item>
                      <img  width={1600} height={900}alt="900x500" src="Image/Oomim Garden Fanclub1.jpg"  rounded/>
@@ -69,8 +73,9 @@ export default class About extends Component {
                  </Carousel.Caption>
                </Carousel.Item>
              </Carousel>
-           </div>
+        
            </Animated>
+           </div>
            <FooterPage />
      </div>
    );

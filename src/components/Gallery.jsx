@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import {Animated} from "react-animated-css";
 import ImageGallery from 'react-image-gallery';
-import {Grid} from 'react-bootstrap';
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
@@ -67,10 +66,6 @@ export default class News extends Component {
     {
       original: 'Image/17.jpg',
       thumbnail: 'Image/17.jpg'
-    },
-    {
-      original: 'Image/18.jpg',
-      thumbnail: 'Image/18.jpg'
     },
     {
       original:  'Image/14.jpg',
@@ -243,9 +238,9 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
-       <grid className="container">
+       <div id="gallery">
        <ImageGallery items={images} />
-       </grid>
+       </div>
     <FooterPage />
      </div>
 

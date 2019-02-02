@@ -13,7 +13,7 @@ export default class Shop extends Component {
     <Navbar />
 
        
-   <h1>ขออภัย Shop ยังไม่เปิด</h1>
+   <h1>ขออภัย Shop ยังไม่เปิดในบริการในขณะนี้</h1>
        
   <FooterPage />
      </div>

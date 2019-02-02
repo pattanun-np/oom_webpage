@@ -1,4 +1,43 @@
-.img-align{
-border: 10px;
-
+body{
+    background: #fff;
 }
+#box
+{
+    position: relative;
+    margin: 2.5% auto;
+    height: 400px;
+    width: 1500px;
+    background:rgba(255, 255, 255, 0.835);
+    border-radius:15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.text{
+
+    color:#52c27c;
+    text-align: left;
+    font-family: Kanit;
+    margin-left: 75px;
+    margin-bottom: 10px;
+  
+  }
+  .text1{
+  
+    color: white;
+    text-align: center;
+    text-size-adjust: 100px;
+  
+    font-family: Kanit;
+  }
+  .text2{
+  
+    color: white;
+    text-align: center;
+  
+  
+    font-family: Kanit;
+  }
+  .Img
+  {   
+        margin:auto;
+        box-shadow: rgba(0, 0, 0, 0.6);
+  }

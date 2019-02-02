@@ -4,6 +4,7 @@ import {Animated} from "react-animated-css";
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
+import './News.css'
 export default class News extends Component {
   render() {
     return(
@@ -11,6 +12,7 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
+    <div id="content-news">
 
        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div>
@@ -86,6 +88,7 @@ export default class News extends Component {
 
     </Row>
   </Grid>;
+  </div>
   <FooterPage />
      </div>
 

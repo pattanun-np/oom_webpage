@@ -1,0 +1,45 @@
+#content
+{
+    position: relative;
+    margin: 5% auto;
+    height: 250px;
+    width: 600px;
+    background:rgba(255, 255, 255, 0.835);
+    border-radius:25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+
+.textfanpage
+{ 
+    margin-bottom: 28px;
+    width: 220px;
+    height: 50px;
+    background: #5cd3a0;
+    border-radius: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 300px;
+    font-size: 36px;
+    font-family: sans-serif;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+ 
+}
+.page
+{
+    
+padding: 0px;
+margin: 0px;
+box-shadow: rgba(0, 0, 0, 0.6);
+}
+.page:hover,.page:focus
+{
+    
+padding: 5px;
+margin: 30px;
+transition: 0.2s ease;
+
+}
