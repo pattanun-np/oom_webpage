@@ -1,7 +1,7 @@
 FROM node:9 as builder
 RUN mkdir /oom-web
 WORKDIR /oom-web
-COPY oom-web.
+COPY oomweb.
 
 RUN npm install --quiet
 RUN npm run build
