@@ -3,6 +3,10 @@
 text-align: left;
 font-family:Pacifico;
 }
+.container {
+  @media (min-width: 768px){
+    display: none;}
+}
 .text{
 
   color:#52c27c;

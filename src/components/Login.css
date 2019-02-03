@@ -10,11 +10,13 @@ body
  font-family:sans-serif;
  font-weight: 300;
  background:#efefef;
- background-image: url('/Image/BK.jpg');
  background-size:cover; 
+ background-position: center;
 }
 
-
+.container{
+    display: flex;
+}
 #container
 {
     position: relative;

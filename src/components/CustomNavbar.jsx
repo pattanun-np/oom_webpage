@@ -1,46 +1,40 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavItem,Container,NavDropdown } from 'react-bootstrap';
 import './CustomNavbar.css'
 
 export default class CustomNavbar extends Component {
   render() {
     return (
-      <Navbar default collapseOnSelect>
-        <Navbar.Header>
-  <img width={55} height={50} alt="" src="favicon.ico" align="left" href="/"/>
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Navbar.Brand href="/"><img
+        src="/favicon.ico"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"
+      /></Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/about">About Us</Nav.Link>
+      <Nav.Link href="/gallery">Gallery</Nav.Link>
+      <Nav.Link href="/shop">Shop</Nav.Link>
+      
+    </Nav>
+    <Nav>
+    <Nav.Link eventKey={2} href="/login">
+        Sign Up
+      </Nav.Link>
+      <Nav.Link eventKey={2} href="/login">
+        Login 
+      </Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
 
-          <Navbar.Brand>
-            <a href="/">Oomim Garden </a>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Home
-            </NavItem>
-            <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
-              About us
-            </NavItem>
-            <NavItem eventKey={3} componentClass={Link} href="/news" to="/news">
-              News
-            </NavItem>
-            <NavItem eventKey={4} componentClass={Link} href="/gallery" to="/gallery">
-              Gallery
-            </NavItem>
-            <NavItem eventKey={5} componentClass={Link} href="/Support" to="/Support">
-              Support
-            </NavItem>
-            <NavItem eventKey={6} componentClass={Link} href="/Shop" to="/Shop">
-              Shop
-            </NavItem>
-            <NavItem eventKey={7} componentClass={Link} href="/Login" to="/Login">
-              Login
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    )
+
+
+    );
   }
 }

@@ -8,6 +8,6 @@ export default class FooterPage extends React.Component {
             <h5>Copyright © 2018 Listing. All rights reserved , Design with FanPage OOMIM GARDEN</h5>
           </div>
 
-    )
+    );
   }
 }

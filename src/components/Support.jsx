@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Grid, Row, Col,  Thumbnail,Image,  Carousel, Media,  } from 'react-bootstrap';
+import {Image,  Carousel,  } from 'react-bootstrap';
 import {Animated} from "react-animated-css";
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';

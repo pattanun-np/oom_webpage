@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Animated} from "react-animated-css";
-import { Image,  Carousel} from 'react-bootstrap';
+import { Image,  Carousel, Col, Container,Row,Media} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
@@ -9,30 +9,22 @@ export default class About extends Component {
   render() {
     return(
 <div>
-  
+
     <SnowStorm />
-    <Navbar />
-     <div id="box">
-     <div className="Img">
-       <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
-         
-                <img  width={320} height={250} alt="" src="favicon.ico" align="left" href="/"/>
-           
-       </Animated>
-       </div>
-       <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-           <div>
-                <h1 className="text">พวกเรา คือ ชาวสวนดอกไม้ของคุณอุ้ม</h1>
-                <h2 className="text"> ความเป็นมาของชื่อ:</h2>
-                <h3 className="text"> สมัยก่อนเราใช้ชื่อห้องไลน์ว่า Oom BNK48 Thailand Fans
-                  จนกระทั่งมีการเปิดโหวตชื่อด้อม เพราะอยากให้น้องมีชื่อเรียกกลุ่มแฟนคลับของน้อง
-                  เลยมีการเปิดโหวตชื่อด้อมขึ้น แต่ผลโหวตยังไม่ทันออก เราก็ได้ชื่อด้อมกันแล้ว
-                  โดยเพื่อนน้องที่อยู่ในกลุ่มไลน์ เอาชื่อด้อมที่เปิดโหวตไปให้น้องเลือก
-                  และน้องก็เลือกชื่อ "อุ้มอิ้มการ์เด้น" น้องบอกว่าน่ารักดี
-                  เราเลยมีชื่อด้อมกันใช้ทุกวันนี้จร้า</h3>
-                 </div>
-           </Animated>
-         <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+    <Navbar />       
+    <Media>
+         <img width={64} height={64} className="mr-3" src="favicon.ico" alt="Generic placeholder" />
+    
+    <Media.Body>
+    <h3 className="text">พวกเราคือชาวสวนดอกไม้ของคุณอุ้ม (Oomim Garden)</h3>
+    <h4 className="text"> ความเป็นมาของชื่อ:</h4>
+    <p className="text"> สมัยก่อนเราใช้ชื่อห้องไลน์ว่า Oom BNK48 Thailand Fans
+    จนกระทั่งมีการเปิดโหวตชื่อด้อม เพราะอยากให้น้องมีชื่อเรียกกลุ่มแฟนคลับของน้อง
+    เลยมีการเปิดโหวตชื่อด้อมขึ้น แต่ผลโหวตยังไม่ทันออก เราก็ได้ชื่อด้อมกันแล้ว
+    โดยเพื่อนน้องที่อยู่ในกลุ่มไลน์ เอาชื่อด้อมที่เปิดโหวตไปให้น้องเลือกและน้องก็เลือกชื่อ "อุ้มอิ้มการ์เด้น" น้องบอกว่าน่ารักดีเราเลยมีชื่อด้อมกันใช้ทุกวันนี้จร้า</p>
+  </Media.Body>
+</Media>
+    
              <div className="contianer-fluid">
                     <a href="https://www.facebook.com/oomimgarden/">
                           <Image className="BTN"width={50} height={50} alt="50x50" src="Image/FB.png" rounded/>
@@ -44,10 +36,7 @@ export default class About extends Component {
                         <Image className="BTN"width={50} height={50} alt="50x50" src="Image/twitter.png" rounded/>
                  </a>
              </div>
-             </Animated>
-             </div>
-             <div>
-             <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
+           
         
              <Carousel>
                <Carousel.Item>
@@ -74,9 +63,10 @@ export default class About extends Component {
                </Carousel.Item>
              </Carousel>
         
-           </Animated>
-           </div>
+          
+     
            <FooterPage />
+          
      </div>
    );
   }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Grid, Row} from 'react-bootstrap'
+import {Row,Col, Container,Card} from 'react-bootstrap'
 import SnowStorm from 'react-snowstorm';
 import Navbar from './CustomNavbar';
 import FooterPage from './Footer';
@@ -8,11 +8,12 @@ export default class Login extends Component{
     render(){
         return (  
     <div>
+        
        <Navbar />
        <SnowStorm />
+       <Card body>
         <h1 className="text">*ระบบอยู่ในระหว่างการพัฒนาหากพบปัญหาโปรดเเจ้ง*</h1>
-        <div id="container">
-
+         <div id="container">
             <div className="frame-left">
                  <h1>Sign Up</h1>
                  <input type="text" name="username" placeholder="Username"/>
@@ -23,9 +24,10 @@ export default class Login extends Component{
                 <button className="social facebook">Log in with Facebook</button>
              <button className="social twitter">Log in with Twitter</button>
         </div>
-
             <div className="frame-right"></div>
-           </div>
+           
+           </div></Card>;
+       
     </div>
   );
  }

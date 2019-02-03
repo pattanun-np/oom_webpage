@@ -12,9 +12,27 @@ export default class News extends Component {
     
     const images = [
     {
-      original:  'Image/2.jpg',
-      thumbnail: 'Image/2.jpg',
+      original:  'Image/คุณอุ้มนุ่มนิ่ม1.jpg',
+      thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม1.jpg',
     },
+    {
+      original:  'Image/คุณอุ้มนุ่มนิ่ม2.jpg',
+      thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม2.jpg',
+    },
+    {
+      original:  'Image/Oom Handshake Event 1.jpg',
+      thumbnail: 'Image/Oom Handshake Event 1.jpg',
+    },
+    
+    {
+      original:  'Image/คุณอุ้มนุ่มนิ่ม3.jpg',
+      thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม3.jpg',
+    },
+    {
+      original:  'Image/คุณอุ้มนุ่มนิ่ม4.jpg',
+      thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม4.jpg',
+    },
+    
     {
       original: 'Image/1.jpg',
       thumbnail: 'Image/1.jpg'

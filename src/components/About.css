@@ -3,9 +3,9 @@ body{
 }
 #box
 {
-    position: relative;
-    margin: 2.5% auto;
-    height: 400px;
+    position:relative;
+    margin: 2% auto;
+    height: 500px;
     width: 1500px;
     background:rgba(255, 255, 255, 0.835);
     border-radius:15px; 
