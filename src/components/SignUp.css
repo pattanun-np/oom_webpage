@@ -1,0 +1,140 @@
+
+body
+{
+    
+ margin: 0;
+ padding: 0;
+ background:#efefef;
+ font-size: 18px;
+ color: #777;
+ font-family:sans-serif;
+ font-weight: 300;
+ background:#efefef;
+ background-size:cover; 
+ background-position: center;
+}
+
+.container{
+    display: flex;
+}
+#container
+{
+    position: relative;
+    margin: 5% auto;
+    height: 500px;
+    width: 350px;
+    background:rgba(255, 255, 255, 0.835);
+    border-radius:25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.frame-left
+{
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+padding: 48px;
+width: 300px;
+height: 450px;
+
+
+}
+h1
+{
+    margin: 0 0 20px 0 ;
+    font-weight: 300px;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+ display:block;
+ box-sizing: border-box;
+ margin-bottom: 20px;
+ padding: 4px;
+ width: 220px;
+ height: 32px;
+ background-color: hsla(0, 0%, 100%, 0.746);
+ border: none;
+ outline: none;
+ border-bottom: 1px solid #aaa;
+ font-family:sans-serif;
+ font-weight: 400;
+ font-size: 15px;
+ transition: 0.2s ease;
+}
+input[type="submit"]
+{
+ margin-bottom: 28px;
+ width: 120px;
+ height: 32px;
+ background: #f44336;
+ border: none;
+ border-radius: 30px;
+ color: #fff;
+ font-family: sans-serif;
+ font-weight: 500;
+ text-transform: uppercase;
+ transition: 0.2 ease;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: rgb(11, 192, 80);
+    width: 220px;
+    transition: 0.2s ease;
+}
+
+.frame-right .signinwith
+{
+ display: block;
+ margin-bottom: 40px;
+ font-size: 28px;
+ color: #777;
+ text-align: center;
+ text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6)
+}
+button.social
+{
+    margin-bottom: 28px;
+    widows: 2;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius:25px; 
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+button.social:hover
+{
+    margin-bottom: 28px;
+    widows: 2;
+    width: 270px;
+    height: 36px;
+    border: none;
+    border-radius:25px; 
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.facebook{
+    background: rgba(66, 103, 178, 0.78);
+}
+.twitter
+{
+    background: #1da1f2;
+}
+.text:hover{
+   text-shadow: #777;
+   transition: 0.1s ease;
+
+}
+.al{
+    margin-top: 0%;
+    margin:  1%;
+}
