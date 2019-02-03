@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row,Col, Container,Card} from 'react-bootstrap'
+import {Col} from 'react-bootstrap'
 import SnowStorm from 'react-snowstorm';
 import Navbar from './CustomNavbar';
 import FooterPage from './Footer';
@@ -11,24 +11,22 @@ export default class Login extends Component{
         
        <Navbar />
        <SnowStorm />
-       <Card body>
-        <h1 className="text">*ระบบอยู่ในระหว่างการพัฒนาหากพบปัญหาโปรดเเจ้ง*</h1>
-         <div id="container">
+
+         <Col  id="container1">
             <div className="frame-left">
-                 <h1>Sign Up</h1>
+                 <h1>Login</h1>
                  <input type="text" name="username" placeholder="Username"/>
-                 <input type="email" name="email" placeholder="Email"/>
                  <input type="password" name="password" placeholder="Password"/>
-                 <input type="password" name="password2" placeholder="Confrim your password"/>
-                <input type="submit" name="signup-button" value="Sign Up"/>
+                <input type="submit1" name="signup-button" value="  Login "/>
                 <button className="social facebook">Log in with Facebook</button>
-             <button className="social twitter">Log in with Twitter</button>
-        </div>
-            <div className="frame-right"></div>
-           
-           </div></Card>;
-       
-    </div>
+                <button className="social twitter">Log in with Twitter</button>
+             </div>
+             <div className="al">
+             <a className="text" href="/signup"><span>Do not has an acount? </span> SignUp</a>
+             </div>
+           </Col> 
+           <FooterPage/>
+   </div>
   );
  }
 }

@@ -18,12 +18,13 @@ export default class CustomNavbar extends Component {
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/about">About Us</Nav.Link>
+      <Nav.Link href="/news">News</Nav.Link>
       <Nav.Link href="/gallery">Gallery</Nav.Link>
       <Nav.Link href="/shop">Shop</Nav.Link>
       
     </Nav>
     <Nav>
-    <Nav.Link eventKey={2} href="/login">
+    <Nav.Link eventKey={2} href="/SignUp">
         Sign Up
       </Nav.Link>
       <Nav.Link eventKey={2} href="/login">

@@ -9,7 +9,7 @@ body
  color: #777;
  font-family:sans-serif;
  font-weight: 300;
- background:#efefef;
+ background:url('/Image/BK.jpg');
  background-size:cover; 
  background-position: center;
 }
@@ -17,12 +17,12 @@ body
 .container{
     display: flex;
 }
-#container
+#container1
 {
     position: relative;
     margin: 5% auto;
-    height: 500px;
-    width: 800px;
+    height: 430px;
+    width: 370px;
     background:rgba(255, 255, 255, 0.835);
     border-radius:25px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -41,7 +41,7 @@ height: 450px;
 }
 h1
 {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 0 ;
     font-weight: 300px;
     font-size: 28px;
 }
@@ -65,10 +65,10 @@ input[type="email"]
  font-size: 15px;
  transition: 0.2s ease;
 }
-input[type="submit"]
+input[type="submit1"]
 {
  margin-bottom: 28px;
- width: 120px;
+ width: 130px;
  height: 32px;
  background: #f44336;
  border: none;
@@ -79,40 +79,11 @@ input[type="submit"]
  text-transform: uppercase;
  transition: 0.2 ease;
 }
-input[type="submit"]:hover,
-input[type="submit"]:focus
+input[type="submit1"]:hover,
+input[type="submit1"]:focus
 {
     background: rgb(11, 192, 80);
     width: 220px;
-    transition: 0.2s ease;
-}
-.frame-right
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    width: 300px;
-    height: 450px;
-    background-image: url('/Image/oom cartoon.png');
-    background-size: cover; 
-    background-position: center;
-    transition: 0.2s ease;
-    
-
-}
-.frame-right:hover,
-.frame-right:focus
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    width: 300px;
-    height: 400px;
-    background-image: url('/Image/oom cartoon.png');
-    background-size: 350px; 
-    background-position: center;
     transition: 0.2s ease;
 }
 
@@ -157,13 +128,4 @@ button.social:hover
 .twitter
 {
     background: #1da1f2;
-}
-
-.facebook:hover{
-    background-image:url('/Image/FB.png');
-
-}
-.twitter:hover
-{   background-image:url('/Image/twitter.png');
- 
 }

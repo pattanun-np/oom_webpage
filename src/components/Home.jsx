@@ -1,13 +1,26 @@
 import React, {Component} from 'react'
-import {Carousel,} from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
+import {Carousel, Card,} from 'react-bootstrap';
 import './Home.css'
 import {Animated} from "react-animated-css";
 import SnowStorm from 'react-snowstorm';
-
+import YouTube from 'react-youtube';
 export default class  Home extends Component {
   
   render() {
+    const opts = {
+      height: '240',
+      width: '340',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
+    const opts1 = {
+      height: '240',
+      width: '340',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 0
+      }
+    };
     return (
    
 <div>
@@ -31,6 +44,7 @@ export default class  Home extends Component {
     <img
       className="d-block w-100"
       src="./Image/oom (3).jpg"
+      alt="3"
     />
 
     <Carousel.Caption>
@@ -50,12 +64,27 @@ export default class  Home extends Component {
         <a className="text1" href="/shop">ซื้อGoods</a>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel>;
+</Carousel>
 </div>
 </Animated> 
+ <Card Home>
+ <YouTube
+        videoId="2d5ATnB5Pp4"
+        opts={opts}
+        onReady={this._onReady}/>
 
+ <YouTube
+        videoId="hsLcQGUxxs0&t=81s"
+        opts={opts1}
+        onReady={this._onReady}/>
+ </Card>
+ 
 </div>
 
   );
+  }
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
   }
 }

@@ -1,11 +1,11 @@
 import React, {Component} from "react"
-import {Animated} from "react-animated-css";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
 import './Gallery.css'
+import {Card} from 'react-bootstrap'
 
 export default class News extends Component {
   render() {
@@ -256,9 +256,11 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
+    <Card>
        <div id="gallery">
        <ImageGallery items={images} />
        </div>
+    </Card>
     <FooterPage />
      </div>
 

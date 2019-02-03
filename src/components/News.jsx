@@ -12,20 +12,32 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
-    <div id="content-news">
-    <Card style={{ width: '18rem' }}>
+    
+    <Col className="container">
+    <Card style={{ width: '16rem' }}>
   <Card.Img variant="top" src="./Image/election.jpg" />
-  <Card.Body>
-    <Card.Title>ร่วมยินดีกับผลเลือกตั้งของคุณอุ้ม【อันดับที่ 27】</Card.Title>
-    <Card.Text>
+  <Card.Body >
+    <Card.Title className="text-new">ร่วมยินดีกับผลเลือกตั้งของคุณอุ้ม【อันดับที่ 27】</Card.Title>
+    <Card.Text className="text-new">
     เมื่อ 26 มกราคมที่ผ่านมาในงานประการผลการเลือกตั้ง BNK48GenneralElection 
     คุณอุ้มของพวกเราคว้า อันดับที่ 27 ขอบคุณทุกคะแนนโหวตทั้งจากกิจกรรมปาสลิป และ การโหวตแบบปกติ              
-    </Card.Text>
-    <Button variant="success">อ่านเพิ่มเติม</Button>
+    </Card.Text >
   </Card.Body>
 </Card>
-      
-  </div>
+<Card style={{ width: '16rem', }}>
+  <Card.Img variant="top" src="./Image/theater.jpg" />
+  <Card.Body>
+    <Card.Title className="text-new">
+    【BNK48 The Campus Stage Performance】
+8 กุมภาพันธ์ 2562 (ศุกร์) เวลา 19:00น. : BNK48 Trainee「PARTY ga Hajimaru yo」</Card.Title>
+    <Card.Text className="text-new">
+    
+สมาชิกที่ขึ้นแสดง
+Natherine / Bamboo / Panda / Kheng / Myyu / Oom / Cake / Gygee / Pakwan / Nine / Aom / Minmin / Phukkhom / Faii / Stang / Niky           
+    </Card.Text>
+  </Card.Body>
+</Card>
+</Col>
   
   <FooterPage />
      </div>
