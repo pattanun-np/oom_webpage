@@ -3,10 +3,7 @@
 text-align: left;
 font-family:Pacifico;
 }
-.container {
-  @media (min-width: 768px){
-    display: none;}
-}
+
 .text{
 
   color:#52c27c;
@@ -76,4 +73,28 @@ margin-top: 25px;
   display: table;
   top: 0;
   background-size: cover;
+}
+#container5{
+ width: 640px;
+ height: 420px;
+margin-top: 20px;
+
+
+
+}
+#container6{
+  width: 750px;
+  height: 800px;
+
+} 
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+ 
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }

@@ -17,9 +17,8 @@ export default class CustomNavbar extends Component {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/about">About Us</Nav.Link>
+    <Nav.Link href="/about">About Us</Nav.Link>
       <Nav.Link href="/news">News</Nav.Link>
-      <Nav.Link href="/gallery">Gallery</Nav.Link>
       <Nav.Link href="/shop">Shop</Nav.Link>
       
     </Nav>
@@ -29,7 +28,7 @@ export default class CustomNavbar extends Component {
       </Nav.Link>
       <Nav.Link eventKey={2} href="/login">
         Login 
-      </Nav.Link>
+    </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

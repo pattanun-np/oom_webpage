@@ -1,26 +1,12 @@
 import React, {Component} from 'react'
-import {Carousel, Card,} from 'react-bootstrap';
+import {Carousel, Card,Col, Container} from 'react-bootstrap';
 import './Home.css'
 import {Animated} from "react-animated-css";
 import SnowStorm from 'react-snowstorm';
-import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player' ;
 export default class  Home extends Component {
-  
+
   render() {
-    const opts = {
-      height: '240',
-      width: '340',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
-      }
-    };
-    const opts1 = {
-      height: '240',
-      width: '340',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 0
-      }
-    };
     return (
    
 <div>
@@ -67,24 +53,101 @@ export default class  Home extends Component {
 </Carousel>
 </div>
 </Animated> 
- <Card Home>
- <YouTube
-        videoId="2d5ATnB5Pp4"
-        opts={opts}
-        onReady={this._onReady}/>
-
- <YouTube
-        videoId="hsLcQGUxxs0&t=81s"
-        opts={opts1}
-        onReady={this._onReady}/>
- </Card>
  
+<Card id="container5">
+<h1 className="text">OOM BNK48 ORIGINAL FANSONG</h1>
+<div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url='https://www.youtube.com/watch?v=2d5ATnB5Pp4'
+          width='100%'
+          height='100%'
+        />
+      </div></Card>
+      <Card id="container5">
+      <h1 className="text">BNK48 Senbatsu General Election</h1>
+      <div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url='https://www.youtube.com/watch?v=-j-CdY8iuys'
+          width='100%'
+          height='100%'
+        />
+      </div>
+
+</Card>
+<Card id="container6">
+<h1 className="text">Oomim-gardeshop<span><a className="text" href="/shop">Click here!</a></span></h1>
+       <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop1.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop2.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop3.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop4.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop5.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="./Image/shop6.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+ 
+
+</Card >
+
+
 </div>
 
   );
-  }
-  _onReady(event) {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
   }
 }

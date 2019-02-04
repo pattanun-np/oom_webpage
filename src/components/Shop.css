@@ -18,3 +18,38 @@
     border-radius:25px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
+#container7
+{
+    position: relative;
+    margin: 2% auto;
+    height: 500px;
+    width: 1000px;
+    background:rgba(255, 255, 255, 0.9);
+    border-radius:25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.size
+{
+    margin-top: 10px;
+}
+input[type="number"]
+{
+ margin-bottom: 28px;
+ width: 120px;
+ height: 32px;
+ background:orchid;
+ border: none;
+ border-radius: 30px;
+ color: #fff;
+ font-family: sans-serif;
+ font-weight: 500;
+ text-transform: uppercase;
+ transition: 0.2 ease;
+ margin-left: 10px;
+ text-align: center;
+ text-decoration-color: #fff;
+}
+.text4{
+    color: palevioletred;
+    font-family: Kanit;
+}
