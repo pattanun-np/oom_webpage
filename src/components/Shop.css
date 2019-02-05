@@ -12,8 +12,8 @@
 {
     position: relative;
     margin: 2% auto;
-    height: 320px;
-    width: 320px;
+    height: 1000px;
+    width: 1000px;
     background:rgba(255, 255, 255, 0.835);
     border-radius:25px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -21,11 +21,22 @@
 #container7
 {
     position: relative;
-    margin: 2% auto;
-    height: 500px;
-    width: 1000px;
+    margin: 1% auto;
+    height: auto;
+    width:auto;
     background:rgba(255, 255, 255, 0.9);
-    border-radius:25px; 
+    border-radius:15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+#container8
+{
+    position: relative;
+    margin: 1% auto;
+    padding: 10px;
+    height: 560;
+    width:200;
+    background:rgba(255, 255, 255, 0.9);
+    border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .size
@@ -34,13 +45,13 @@
 }
 input[type="number"]
 {
- margin-bottom: 28px;
- width: 120px;
- height: 32px;
- background:orchid;
+ margin-bottom: 10px;
+ width: 25px;
+ height: 20px;
+ background:#fff;
  border: none;
  border-radius: 30px;
- color: #fff;
+ color: #47de8e;
  font-family: sans-serif;
  font-weight: 500;
  text-transform: uppercase;
@@ -52,4 +63,12 @@ input[type="number"]
 .text4{
     color: palevioletred;
     font-family: Kanit;
+}
+.button
+{
+    margin-bottom: 10px;
+}
+.outline-success
+{
+    width: 10px;
 }

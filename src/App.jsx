@@ -6,6 +6,7 @@ import News from './components/News';
 import Gallery from './components/Gallery';
 import Support from './components/Support';
 import Shop from './components/Shop';
+import Shop001 from './components/Shop001';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
                 <Route  exact path="/about" component={About} />
                 <Route  exact path="/support" component={Support} />
                 <Route  exact path="/shop" component={Shop} />
+                <Route  exact path="/shop001" component={Shop001} />
                 <Route  exact path="/signup" component={SignUp} />
                 <Route  exact path="/login" component={Login} />
       </Switch>

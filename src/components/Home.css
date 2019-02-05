@@ -75,16 +75,18 @@ margin-top: 25px;
   background-size: cover;
 }
 #container5{
- width: 640px;
- height: 420px;
+  position: relative;
+ width: 1600px;
+ height: 900px;
 margin-top: 20px;
 
 
 
 }
 #container6{
-  width: 750px;
-  height: 800px;
+  position: relative;
+  width: 1600px;
+  height: 900px;
 
 } 
 .player-wrapper {

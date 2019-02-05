@@ -19,6 +19,7 @@ export default class CustomNavbar extends Component {
       <Nav.Link href="/">Home</Nav.Link>
     <Nav.Link href="/about">About Us</Nav.Link>
       <Nav.Link href="/news">News</Nav.Link>
+      <Nav.Link href="/gallery">Gallery</Nav.Link>
       <Nav.Link href="/shop">Shop</Nav.Link>
       
     </Nav>

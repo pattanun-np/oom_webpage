@@ -11,7 +11,6 @@ export default class  Home extends Component {
    
 <div>
   <SnowStorm />
- 
   <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
 <div>
 <Carousel>
@@ -54,7 +53,6 @@ export default class  Home extends Component {
 </div>
 </Animated> 
  
-<Card id="container5">
 <h1 className="text">OOM BNK48 ORIGINAL FANSONG</h1>
 <div className='player-wrapper'>
         <ReactPlayer
@@ -63,89 +61,8 @@ export default class  Home extends Component {
           width='100%'
           height='100%'
         />
-      </div></Card>
-      <Card id="container5">
-      <h1 className="text">BNK48 Senbatsu General Election</h1>
-      <div className='player-wrapper'>
-        <ReactPlayer
-          className='react-player'
-          url='https://www.youtube.com/watch?v=-j-CdY8iuys'
-          width='100%'
-          height='100%'
-        />
-      </div>
 
-</Card>
-<Card id="container6">
-<h1 className="text">Oomim-gardeshop<span><a className="text" href="/shop">Click here!</a></span></h1>
-       <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop1.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop2.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop3.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop4.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop5.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="./Image/shop6.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
- 
-
-</Card >
-
-
+</div>
 </div>
 
   );

@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Animated} from "react-animated-css";
-import { Image,  Carousel, Col, Container,Row,Media} from 'react-bootstrap';
+import { Image,  Carousel, Col, Card,Row,Media} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
@@ -11,11 +11,10 @@ export default class About extends Component {
 <div>
 
     <SnowStorm />
-    <Navbar />       
-    <Media>
-         <img width={310} height={210} className="mr-3" src="favicon.ico" alt="Generic placeholder" />
+    <Navbar /> 
+    <Card id="container7">      
     
-    <Media.Body>
+         <img width={180} height={150} className="mr-3" src="favicon.ico" alt="Generic placeholder" />
     <h3 className="text">พวกเราคือชาวสวนดอกไม้ของคุณอุ้ม (Oomim Garden)</h3>
     <h4 className="text"> ความเป็นมาของชื่อ:</h4>
     <p className="text"> สมัยก่อนเราใช้ชื่อห้องไลน์ว่า Oom BNK48 Thailand Fans
@@ -24,8 +23,8 @@ export default class About extends Component {
     เราก็ได้ชื่อด้อมกันแล้ว โดยเพื่อนน้องที่อยู่ในกลุ่มไลน์ 
     เอาชื่อด้อมที่เปิดโหวตไปให้น้องเลือกและน้องก็เลือกชื่อ 
     "อุ้มอิ้มการ์เด้น" น้องบอกว่าน่ารักดีเราเลยมีชื่อด้อมกันใช้ทุกวันนี้จร้า</p>
-  </Media.Body>
-</Media>
+
+
     
              <div className="contianer-fluid">
                     <a href="https://www.facebook.com/oomimgarden/">
@@ -38,7 +37,7 @@ export default class About extends Component {
                         <Image className="BTN"width={50} height={50} alt="50x50" src="Image/twitter.png" rounded/>
                  </a>
              </div>
-           
+             </Card>    
         
              <Carousel>
                <Carousel.Item>

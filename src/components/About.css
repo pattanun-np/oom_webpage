@@ -41,3 +41,13 @@ body{
         margin:auto;
         box-shadow: rgba(0, 0, 0, 0.6);
   }
+  #container7
+{
+    position: relative;
+    margin: 1% auto;
+    height: 560;
+    width:480;
+    background:rgba(255, 255, 255, 0.9);
+    border-radius:15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
