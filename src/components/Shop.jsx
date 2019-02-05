@@ -1,9 +1,8 @@
 import React, {Component} from "react"
-import { Col,Button,Card,Media,ButtonGroup,Form } from 'react-bootstrap';
+import {Button,Card } from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
-import ImageUploader from 'react-images-upload';
 import './Shop.css'
 export default class Shop extends Component {
 

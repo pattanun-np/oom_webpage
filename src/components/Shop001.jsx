@@ -1,14 +1,25 @@
 import React, {Component} from "react"
-import { Col,Button,Card,Modal,ButtonGroup,Form } from 'react-bootstrap';
+import { Col,Button,Card,Modal,ListGroup,Form } from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
+import firebase from 'firebase';
 import FooterPage from './Footer';
 import ImageUploader from 'react-images-upload';
 import './Shop.css'
+
 export default class Shop001 extends Component {
 
   constructor(props, context) {
     super(props, context);
+    var config = {
+      apiKey: 'AIzaSyDO6axPzzBni1drkSb_xlqpbvjst-MSGOg',
+      authDomain: 'web-sever-217114.firebaseapp.com',
+      databaseURL: 'https://web-sever-217114.firebaseio.com',
+      projectId: 'web-sever-217114',
+      storageBucket: 'web-sever-217114.appspot.com',
+      messagingSenderId: '186058268724'
+    };
+    firebase.initializeApp(config);
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
@@ -18,9 +29,19 @@ export default class Shop001 extends Component {
     QuatityM:0,
     QuatityL:0  ,
     QuatityXL:0,
-    QuatityXXL:0,
+    Quatity2XL:0,
+    Email:null,
+    Name:null,
+    Adress:[],
+    Tel:null,
+    District:null,
+    Province:null,
+    ZipCode:null,
+    ExternalComment:[],
     show: false,
+    
     };
+    
     this.onDrop = this.onDrop.bind(this);
   }
   onDrop(picture) {
@@ -35,7 +56,74 @@ handleClose() {
 handleShow() {
   this.setState({ show: true });
 }
+ 
+onChange1(event){
+  this.setState({
+    QuatityS:event.target.value
+  });
+}
 
+onChange2(event){
+  this.setState({
+    QuatityM:event.target.value
+  });
+}
+onChange3(event){
+  this.setState({
+    QuatityL:event.target.value
+  });
+}
+onChange4(event){
+  this.setState({
+    QuatityXL:event.target.value
+  });
+}
+onChange5(event){
+  this.setState({
+    Quatity2XL:event.target.value
+  });
+}
+onChangeEmail(event){
+  this.setState({
+    Email:event.target.value
+  });
+}
+onChangeAdress(event){
+  this.setState({
+    Adress:event.target.value
+  });
+}
+onChangeName(event){
+  this.setState({
+    Name:event.target.value
+  });
+}
+
+onChangeTell(event){
+  this.setState({
+    Tel:event.target.value
+  });
+}
+onChangeDistrict(event){
+  this.setState({
+    District:event.target.value
+  });
+}
+onChangeProvince(event){
+  this.setState({
+    Province:event.target.value
+  });
+}
+onChangeZipCode(event){
+  this.setState({
+    ZipCode:event.target.value
+  });
+}
+onChangeExternalComment(event){
+  this.setState({
+    ExternalComment:event.target.value
+  });
+}
   render() {
     return(
      <div>
@@ -50,44 +138,43 @@ handleShow() {
     <h3 className="text4">เสื้อ 2 (ID:#001)</h3>
   <h5 className="text">กรุณาระบุจำนวน และ ขนาดที่ต้องการ</h5>
     <div>
-    <ButtonGroup size="lg">
-    <Button variant="outline-success"Size="S" >S <input type="number" name="QuatityS"  min="0"></input> </Button>
-    <Button variant="outline-success"Size="M">L  <input type="number" name="QuatityL"  min="0"></input> </Button>
-    <Button variant="outline-success"Size="XL" >XL<input type="number" name="QuatityXL"  min="0"></input> </Button>
-    <Button variant="outline-success"Size="XXL">2XL <input type="number" name="QuatityXXL"  min="0"></input> </Button>
-  </ButtonGroup>
+    <input type="number" name="QuatityS"  min="0" placeholder="S" onChange={this.onChange1.bind(this)} step="any"/>
+    <input type="number" name="QuatityL"  min="0"  placeholder="M" onChange={this.onChange2.bind(this)} step="any"/>
+    <input type="number" name="QuatityXL"  min="0" placeholder="L"onChange={this.onChange3.bind(this)} step="any"/>
+    <input type="number" name="QuatityXXL"  min="0" placeholder="XL"onChange={this.onChange4.bind(this)}step="any" />
+    <input type="number" name="QuatityXXL"  min="0" placeholder="2XL"onChange={this.onChange5.bind(this)}step="any" />
   </div>
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="กรอก email สำหรับยืนยันคำสั่งซื้อ" />
+      <Form.Control type="email" placeholder="กรอก email สำหรับยืนยันคำสั่งซื้อ" onChange={this.onChangeEmail.bind(this)}/>
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridName">
       <Form.Label>ชื่อ-นามสกุล</Form.Label>
-      <Form.Control type="text" placeholder="ชื่อ-นามสกุล" />
+      <Form.Control type="text" placeholder="ชื่อ-นามสกุล" onChange={this.onChangeName.bind(this)} />
     </Form.Group>
   </Form.Row>
 
   <Form.Group controlId="formGridAddress1">
     <Form.Label>ที่อยู่สำหรับจัดส่ง</Form.Label>
-    <Form.Control placeholder="ตัวอย่าง1234 Main St" />
+    <Form.Control placeholder="ตัวอย่าง1234 Main St"onChange={this.onChangeAdress.bind(this)} />
   </Form.Group>
 
-  <Form.Group controlId="formGridNumber">
+  <Form.Group controlId="formGridTel">
     <Form.Label>เบอร์มือถือ</Form.Label>
-    <Form.Control placeholder="08xxxxxxx" />
+    <Form.Control type="tel" placeholder="08xxxxxxx" onChange={this.onChangeTell.bind(this)} />
   </Form.Group>
 
   <Form.Row>
     <Form.Group as={Col} controlId="formGridCity">
-      <Form.Label>อำเภอ</Form.Label>
-      <Form.Control />
+      <Form.Label>อำเภอ</Form.Label >
+      <Form.Control onChange={this.onChangeDistrict.bind(this)} />
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridState">
       <Form.Label>จังหวัด</Form.Label>
-      <Form.Control as="select">
+      <Form.Control as="select" onChange={this.onChangeProvince.bind(this)}>
           <option>เลือกจังหวัด...</option>
           <option>กระบี่</option> 
           <option>กรุงเทพมหานคร</option>
@@ -118,7 +205,7 @@ handleShow() {
           <option>  บึงกาฬ</option>
           <option>  บุรีรัมย์</option>
           <option>  ปทุมธานี</option>
-          <option> ประจวบ</option>
+          <option> ประจวบคีรีขันธ์</option>
           <option> คีรีขันธ์</option>
           <option> ปราจีนบุรี</option>
           <option> ปัตตานี</option>
@@ -170,27 +257,42 @@ handleShow() {
       </Form.Control>
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridZip">
+    <Form.Group as={Col} controlId="formGridZip"onChange={this.onChangeZipCode.bind(this)}>
       <Form.Label>รหัสไปรษณีย์</Form.Label>
       <Form.Control />
     </Form.Group>
   
   </Form.Row>
-  <Form.Group controlId="exampleForm.ControlTextarea1">
+  <Form.Group controlId="exampleForm.ControlTextarea1"onChange={this.onChangeExternalComment.bind(this)}>
     <Form.Label>ข้อความเพิ่มเติม</Form.Label>
     <Form.Control as="textarea" rows="3" />
   </Form.Group>
   
 </Form>
-<h1 className="text">ค่าสินค้า <span> 900 </span> บาท</h1>
-<h1 className="text">+ค่าจัดส่ง <span> 100 </span> บาท</h1>
-<h1 className="text">รวมเป็นเงิน: <span> 1000 </span> บาท</h1>
+<h6 className="text4">**ค่าส่งสินค้าตัวละ 50 บาท**</h6>
+<ListGroup>
+  <ListGroup.Item><h3 className="text">ไซส์ (S) จำนวน : <span>{this.state.QuatityS} </span> ตัว</h3></ListGroup.Item>
+  <ListGroup.Item><h3 className="text">ไซส์ (M) จำนวน : <span>{this.state.QuatityM} </span> ตัว</h3></ListGroup.Item>
+  <ListGroup.Item><h3 className="text">ไซส์ (L) จำนวน: <span>{this.state.QuatityL} </span> ตัว</h3></ListGroup.Item>
+  <ListGroup.Item><h3 className="text">ไซส์ (XL) จำนวน: <span>{this.state.QuatityXL} </span> ตัว</h3></ListGroup.Item>
+  <ListGroup.Item><h3 className="text">ไซส์ (2XL) จำนวน 2XL: <span>{this.state.Quatity2XL} </span> ตัว</h3></ListGroup.Item>
+  <ListGroup.Item><h3 className="text">ค่าสินค้า <span> {this.state.QuatityS*300+this.state.QuatityM*300+this.state.QuatityL*300+this.state.QuatityXL*300+this.state.Quatity2XL*300}</span> บาท</h3></ListGroup.Item>
+  <ListGroup.Item><h4 className="text">+ ค่าจัดส่ง <span>{this.state.QuatityS*50+this.state.QuatityM*50+this.state.QuatityL*50+this.state.QuatityXL*50+this.state.Quatity2XL*50}</span> บาท</h4></ListGroup.Item>
+  <ListGroup.Item><h1 className="text">เป็นเงิน: <span> {this.state.QuatityS*300+this.state.QuatityM*300+this.state.QuatityL*300+this.state.QuatityXL*300+this.state.Quatity2XL*300+this.state.QuatityS*50+this.state.QuatityM*50+this.state.QuatityL*50+this.state.QuatityXL*50+this.state.Quatity2XL*50}</span> บาท</h1></ListGroup.Item>
+</ListGroup>
+
+
+
+
+
+
+
 <ImageUploader
                 withIcon={true}
                 buttonText='กรุณาส่งหลักฐานการโอนเงิน'
                 onChange={this.onDrop}
-                imgExtension={['.jpg',]}
-                maxFileSize={5242880}
+                imgExtension={['.jpg','.png']}
+                maxFileSize={2242880}
             />
 
 <Button variant="success" onClick={this.handleShow}>Submit</Button>
@@ -198,7 +300,20 @@ handleShow() {
           <Modal.Header closeButton>
             <Modal.Title>ยืนยันคำสั่งซื้อ</Modal.Title>
           </Modal.Header>
-          <Modal.Body>กรุณาตรวจสอบข้อมูลให้ครับถ้วนก่อนกดยืนยัน</Modal.Body>
+          <Modal.Body>กรุณาตรวจสอบข้อมูลให้ครับถ้วนก่อนกดยืนยัน
+          <Card>
+            <h6 className="text">Email: {this.state.Email}</h6>
+            <h6 className="text">ชื่อ-นามสกุล: {this.state.Name}</h6>
+            <h6 className="text">ที่อยู่: {this.state.Adress}</h6>
+            <h6 className="text">เบอร์มือถือ: {this.state.Tel}</h6>
+            <h6 className="text">อำเภอ: {this.state.District}</h6>
+            <h6 className="text">จังหวัด: {this.state.Province}</h6>
+            <h6 className="text">รหัสไปรณีษย์: {this.state.ZipCode}</h6>
+            <h6 className="text">ข้อความเพิ่มเติม: {this.state.ExternalComment}</h6>
+          <h2 className="text4">รวมเป็นเงิน: <span> {this.state.QuatityS*300+this.state.QuatityM*300+this.state.QuatityL*300+this.state.QuatityXL*300+this.state.Quatity2XL*300+this.state.QuatityS*50+this.state.QuatityM*50+this.state.QuatityL*50+this.state.QuatityXL*50+this.state.Quatity2XL*50}</span> บาท</h2>
+          </Card>
+          </Modal.Body>
+          
           <Modal.Footer>
             <Button variant="secondary" onClick={this.handleClose}>
               ยกเลิก
@@ -211,6 +326,7 @@ handleShow() {
 </Card>
 
   <FooterPage />
+ 
      </div>
 
    );

@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Animated} from "react-animated-css";
-import { Image,  Carousel, Col, Card,Row,Media} from 'react-bootstrap';
+import { Image,  Carousel, Card} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';

@@ -46,19 +46,18 @@
 input[type="number"]
 {
  margin-bottom: 10px;
- width: 25px;
- height: 20px;
+ width: 35px;
+ height: 30px;
  background:#fff;
  border: none;
- border-radius: 30px;
- color: #47de8e;
+ border-radius: 10px;
+ color: #fafffde0;
  font-family: sans-serif;
  font-weight: 500;
  text-transform: uppercase;
- transition: 0.2 ease;
  margin-left: 10px;
  text-align: center;
- text-decoration-color: #fff;
+
 }
 .text4{
     color: palevioletred;

@@ -1,6 +1,5 @@
 import React, {Component} from "react"
-import {Grid, Row, Col,Card,Button  } from 'react-bootstrap';
-import {Animated} from "react-animated-css";
+import {Col,Card } from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';

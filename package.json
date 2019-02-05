@@ -18,7 +18,8 @@
     "react-scripts": "1.1.5",
     "react-snowstorm": "0.0.2",
     "react-twitter-embed": "^1.2.0",
-    "rebass": "^3.0.0-12"
+    "rebass": "^3.0.0-12",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

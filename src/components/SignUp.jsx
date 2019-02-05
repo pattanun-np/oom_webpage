@@ -3,7 +3,6 @@ import {Col} from 'react-bootstrap'
 import SnowStorm from 'react-snowstorm';
 import Navbar from './CustomNavbar';
 import FooterPage from './Footer';
-import auth from '../firebase'
 import './SignUp.css'
 export default class SignUP extends Component{
     
