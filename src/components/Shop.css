@@ -1,3 +1,25 @@
+/*Style Shop.jsx*/
+#container8
+{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    background:rgba(255, 255, 255, 0.9);
+    border-radius:15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.btn{
+    margin-top: 10px;
+    width: 100%;
+}
+#imageshop1 {
+    margin-right : 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 #container3
 {
     position: relative;
@@ -28,17 +50,7 @@
     border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-#container8
-{
-    position: relative;
-    margin: 1% auto;
-    padding: 10px;
-    height: 560;
-    width:200;
-    background:rgba(255, 255, 255, 0.9);
-    border-radius:15px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
+
 .size
 {
     margin-top: 10px;

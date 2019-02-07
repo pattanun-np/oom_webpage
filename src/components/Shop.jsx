@@ -32,7 +32,7 @@ export default class Shop extends Component {
 
     <Card id="container8" >
     <h3 className="text4">เสื้อ 2 (ID:#001)</h3>
-    <img width={170} height={150} className="mr-3" src="/Image/001.jpg" alt="Generic placeholder" />
+    <img id="imageshop1" src="/Image/001.jpg" alt="Generic placeholder" />
      <Button  href="shop001">BUY</Button>
 </Card>
 
