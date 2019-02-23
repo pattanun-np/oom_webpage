@@ -1,9 +1,7 @@
 #content-news {
     position: relative;
-    margin: 1% auto;
-    padding: 10px;
-    height: 1920x;
-    width: 1440px;
+    margin: 10% auto;
+    padding: 100px;
     background:rgba(255, 255, 255, 0.835);
     border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -11,6 +9,6 @@
 }
 .text-new{
     max-width: 500px;
-    font-family: sans-serif;
+    font-family: kanit;
     color: #40bf59;
 }

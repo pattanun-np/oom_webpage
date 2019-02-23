@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import { Animated} from "react-animated-css";
 import { Image,  Carousel, Card} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
@@ -14,7 +13,7 @@ export default class About extends Component {
     <Navbar /> 
     <Card id="container7">      
     
-         <img width={180} height={150} className="mr-3" src="favicon.ico" alt="Generic placeholder" />
+         <img width={200} height={150} className="mr-3" src="favicon.ico" alt="Generic placeholder" />
     <h3 className="text">พวกเราคือชาวสวนดอกไม้ของคุณอุ้ม (Oomim Garden)</h3>
     <h4 className="text"> ความเป็นมาของชื่อ:</h4>
     <p className="text"> สมัยก่อนเราใช้ชื่อห้องไลน์ว่า Oom BNK48 Thailand Fans

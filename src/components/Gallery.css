@@ -1,4 +1,7 @@
-.card {
+#gallery
+{   
+    height: 5%;
+    width: 50%;
     position: relative;
     margin: 1% auto;
     padding: 10px;

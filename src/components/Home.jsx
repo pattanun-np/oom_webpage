@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Carousel, Card,Col, Container} from 'react-bootstrap';
+import {Carousel} from 'react-bootstrap';
 import './Home.css'
 import {Animated} from "react-animated-css";
 import SnowStorm from 'react-snowstorm';
@@ -21,7 +21,7 @@ export default class  Home extends Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h4 className="text1">ยินดีต้อนรับสู่สวนดอกไม้ของคุณอุ้ม</h4>
+      <h1 className="text1">ยินดีต้อนรับสู่สวนดอกไม้ของคุณอุ้ม</h1>
       <a className="text1" href="/about">เข้าสู่เว็บไซต์</a>
     </Carousel.Caption>
   </Carousel.Item>
@@ -33,8 +33,8 @@ export default class  Home extends Component {
     />
 
     <Carousel.Caption>
-      <h3><h1 className="text1">Oomim Gallery </h1>
-        <a className="text1" href="/gallery">ชม Gallery</a></h3>
+      <h1 className="text1">Oomim Gallery </h1>
+        <a className="text1" href="/gallery">ชม Gallery</a>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -46,7 +46,7 @@ export default class  Home extends Component {
 
     <Carousel.Caption>
     <h1 className="text1">Oomim Goods</h1>
-        <a className="text1" href="/shop">ซื้อGoods</a>
+        <a className="text1" href="/shop">ซื้อ Goods</a>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

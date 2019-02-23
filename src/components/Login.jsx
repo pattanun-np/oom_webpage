@@ -4,7 +4,10 @@ import SnowStorm from 'react-snowstorm';
 import Navbar from './CustomNavbar';
 import FooterPage from './Footer';
 import './Login.css'
+
+
 export default class Login extends Component{
+   
     render(){
         return (  
     <div>
@@ -21,10 +24,8 @@ export default class Login extends Component{
                 <button className="social facebook">Log in with Facebook</button>
                 <button className="social twitter">Log in with Twitter</button>
              </div>
-             <div className="al">
              <a className="text" href="/signup"><span>Do not has an acount? </span> SignUp</a>
-             </div>
-           </Col> 
+          </Col>
            <FooterPage/>
    </div>
   );

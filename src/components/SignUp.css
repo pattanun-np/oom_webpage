@@ -79,7 +79,6 @@ input[type="submit"]
  text-align: center;
  border: none;
  border-radius:25px; 
- box-shadow: 0 6.5px rgba(0, 0, 0, 0.6);
 
 }
 input[type="number"]
@@ -122,7 +121,6 @@ button.social
     height: 36px;
     border: none;
     border-radius:25px; 
-    box-shadow: 0 6.5px rgba(0, 0, 0, 0.6);
     color: #fff;
     font-family: sans-serif;
     font-weight: 500;
@@ -132,8 +130,6 @@ button.social:hover
 {
     margin-bottom: 28px;
     widows: 2;
-    width: 270px;
-    height: 36px;
     border: none;
     border-radius:25px; 
     color: #fff;

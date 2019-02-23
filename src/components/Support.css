@@ -2,8 +2,9 @@
 {
     position: relative;
     margin: 5% auto;
-    height: 250px;
-    width: 600px;
+    padding: 2%;
+    height: auto;
+    width: auto;
     background:rgba(255, 255, 255, 0.835);
     border-radius:25px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -15,13 +16,48 @@
 .textfanpage
 { 
     margin-bottom: 28px;
-    width: 220px;
-    height: 50px;
+    width: 200px;
+    height: 35px;
+    padding: auto;
     background: #5cd3a0;
     border-radius: 30px;
     margin: 0 0 20px 0;
     font-weight: 300px;
-    font-size: 36px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+ 
+}
+.textYT
+{ 
+    margin-bottom: 28px;
+    width: 400px;
+    height: 35px;
+    padding: auto;
+    background: #d35c7a;
+    border-radius: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 300px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+ 
+}
+.textWeb
+{ 
+    margin-bottom: 28px;
+    width: 350px;
+    height: 35px;
+    padding: auto;
+    background: #000000;
+    border-radius: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 300px;
+    font-size: 24px;
     font-family: sans-serif;
     color: #ffffff;
     border: none;
@@ -32,7 +68,7 @@
 {
     
 padding: 0px;
-margin: 0px;
+margin: 10px;
 box-shadow: rgba(0, 0, 0, 0.6);
 }
 .page:hover,.page:focus

@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Col,Card } from 'react-bootstrap';
+import {Card } from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
@@ -11,9 +11,7 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
-    
-    <Col className="container">
-    <Card style={{ width: '16rem' }}>
+    <Card style={{ width: '16rem',margin:'10px', padding:'10px' }}>
   <Card.Img variant="top" src="./Image/election.jpg" />
   <Card.Body >
     <Card.Title className="text-new">ร่วมยินดีกับผลเลือกตั้งของคุณอุ้ม【อันดับที่ 27】</Card.Title>
@@ -23,7 +21,7 @@ export default class News extends Component {
     </Card.Text >
   </Card.Body>
 </Card>
-<Card style={{ width: '16rem', }}>
+<Card style={{ width: '16rem',margin:'10px', padding:'10px'}}>
   <Card.Img variant="top" src="./Image/theater.jpg" />
   <Card.Body>
     <Card.Title className="text-new">
@@ -36,7 +34,7 @@ Natherine / Bamboo / Panda / Kheng / Myyu / Oom / Cake / Gygee / Pakwan / Nine /
     </Card.Text>
   </Card.Body>
 </Card>
-</Col>
+
   
   <FooterPage />
      </div>

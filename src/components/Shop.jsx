@@ -1,44 +1,35 @@
 import React, {Component} from "react"
-import {Button,Card } from 'react-bootstrap';
+import {Button, Card} from 'react-bootstrap';
 import Navbar from './CustomNavbar';
 import SnowStorm from 'react-snowstorm';
 import FooterPage from './Footer';
-import './Shop.css'
+import './Shop.css';
 export default class Shop extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
-    pictures: [] ,
-    QuatityS:0,
-    QuatityM:0,
-    QuatityL:0  ,
-    QuatityXL:0,
-    QuatityXXL:0
+    Cart:0
     };
-    this.onDrop = this.onDrop.bind(this);
-  }
-  onDrop(picture) {
-    this.setState({
-        pictures: this.state.pictures.concat(picture),
-    });
-}
+    }
+    handleClick(){
+      this.setState({
+        Cart:this.state.Cart+1
+      });
+    }   
   render() {
     return(
-     <div>
-       
+      <div>
     <SnowStorm />
     <Navbar />
-
     <Card id="container8" >
     <h3 className="text4">เสื้อ 2 (ID:#001)</h3>
-    <img width={170} height={150} className="mr-3" src="/Image/001.jpg" alt="Generic placeholder" />
+    <img width={200} height={150} src="/Image/001.jpg" alt="Generic placeholder" />
      <Button  href="shop001">BUY</Button>
-</Card>
-
+    </Card>
   <FooterPage />
-     </div>
-
+  </div>
    );
   }
 }

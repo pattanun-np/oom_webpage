@@ -12,25 +12,100 @@ export default class News extends Component {
     
     const images = [
     {
+        original: 'Image/81.jpg',
+        thumbnail: 'Image/81.jpg',
+        description:'Chiness New Years 2019'
+    },
+    {
+      original: 'Image/82.jpg',
+      thumbnail: 'Image/82.jpg',
+      description:'Chiness New Years 2019'
+    },
+    {
+        original: 'Image/83.jpg',
+        thumbnail: 'Image/83.jpg',
+        description:'Chiness New Years 2019'
+    },
+    {
+      original: 'Image/84.jpg',
+      thumbnail: 'Image/84.jpg',
+      description:'Chiness New Years 2019'
+  },
+    {
+        original: 'Image/70.jpg',
+        thumbnail: 'Image/70.jpg',
+        description:'Chiness New Years 2019'
+    },   
+    {
+        original: 'Image/71.jpg',
+        thumbnail: 'Image/71.jpg',
+        description:'Chiness New Years 2019'
+    },     
+    {
+        original: 'Image/72.jpg',
+        thumbnail: 'Image/72.jpg',
+        description:'Chiness New Years 2019'
+    },     
+    {
+        original: 'Image/73.jpg',
+        thumbnail: 'Image/73.jpg',
+        description:'Chiness New Years 2019'
+    },     
+    {
+        original: 'Image/74.jpg',
+        thumbnail: 'Image/74.jpg',
+        description:'Chiness New Years 2019'
+    },   
+    {
+        original: 'Image/75.jpg',
+        thumbnail: 'Image/75.jpg',
+        description:'Chiness New Years 2019'
+    },   
+    {
+        original: 'Image/76.jpg',
+        thumbnail: 'Image/76.jpg',
+        description:'Chiness New Years 2019'
+    },   
+    {
+        original: 'Image/77.jpg',
+        thumbnail: 'Image/77.jpg',
+        description:'Chiness New Years 2019'
+    },   
+    {
+        original: 'Image/78.jpg',
+        thumbnail: 'Image/78.jpg',
+        description:'Chiness New Years 2019'
+    }, 
+    {
+        original: 'Image/79.jpg',
+        thumbnail: 'Image/79.jpg',
+        description:'Chiness New Years 2019'
+    },  
+    {
       original:  'Image/คุณอุ้มนุ่มนิ่ม1.jpg',
       thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม1.jpg',
+      description:'Digital Live Studio'
     },
     {
       original:  'Image/คุณอุ้มนุ่มนิ่ม2.jpg',
       thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม2.jpg',
+      description:'Gala'
     },
     {
       original:  'Image/Oom Handshake Event 1.jpg',
       thumbnail: 'Image/Oom Handshake Event 1.jpg',
+      description:'Handshake Event'
     },
     
     {
       original:  'Image/คุณอุ้มนุ่มนิ่ม3.jpg',
       thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม3.jpg',
+      description:' BNK48 The Campus'
     },
     {
       original:  'Image/คุณอุ้มนุ่มนิ่ม4.jpg',
       thumbnail: 'Image/คุณอุ้มนุ่มนิ่ม4.jpg',
+      description:' BNK48 The Campus'
     },
     
     {
@@ -240,13 +315,16 @@ export default class News extends Component {
     {
       original: 'Image/63.jpg',
       thumbnail: 'Image/63.jpg'
-    },  {
+    },  
+    {
         original: 'Image/64.jpg',
         thumbnail: 'Image/64.jpg'
-    },  {
+    },  
+    {
         original: 'Image/65.jpg',
         thumbnail: 'Image/65.jpg'
-    },  {
+    },  
+    {
         original: 'Image/66.jpg',
         thumbnail: 'Image/66.jpg'
     }
@@ -256,9 +334,9 @@ export default class News extends Component {
        
     <SnowStorm />
     <Navbar />
-    <Card>
-       <div id="gallery">
-       <ImageGallery items={images} />
+    <Card id="gallery">
+       <div >
+       <ImageGallery items={images} sizes={100} />
        </div>
     </Card>
     <FooterPage />
