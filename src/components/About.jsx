@@ -38,7 +38,7 @@ export default class About extends Component {
              </div>
              </Card>    
         
-             <Carousel id="Carousel">
+             <Carousel>
                <Carousel.Item>
                      <img  width={1600} height={900}alt="900x500" src="Image/Oomim Garden Fanclub1.jpg"  rounded/>
                <Carousel.Caption>
