@@ -1,10 +1,13 @@
 
 #container9{
   position: relative;
-  margin: 2% auto;
   height: auto;
   width: auto;
   background:rgba(255, 255, 255, 0.835);
   border-radius:25px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  margin: 20px;
+  padding-left: 500px;
+  align-content: center;
 }

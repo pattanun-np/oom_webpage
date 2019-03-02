@@ -133,6 +133,7 @@ onChangeExternalComment(event){
     <SnowStorm />
     <Navbar />
     <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
+    
     <Card id="container7" >
     
   <Form>

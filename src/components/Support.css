@@ -1,5 +1,6 @@
 #content
-{
+{ 
+
     position: relative;
     margin: 5% auto;
     padding: 2%;
@@ -14,7 +15,7 @@
 
 
 .textfanpage
-{ 
+{   	
     margin-bottom: 28px;
     width: 200px;
     height: 35px;

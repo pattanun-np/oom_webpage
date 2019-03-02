@@ -22,6 +22,13 @@
 {
     position: relative;
     margin: 1% auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
     height: auto;
     width:auto;
     background:rgba(255, 255, 255, 0.9);
@@ -30,17 +37,21 @@
 }
 #container8
 {   
-    width: 250px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
+    margin-left: 50%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     align-items: center;
     padding: 2%;
     position: relative;
     background:rgba(255, 255, 255, 0.9);
-    border-radius:15px; 
+    border-radius:15px;
 }
 .btn{
     margin-top: 10px;
     width: 100%;
+    
 }
 #imageshop1 {
     margin-right : 0px;

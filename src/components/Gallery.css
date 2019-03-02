@@ -1,11 +1,11 @@
 #gallery
 {   
     height: 5%;
-    width: 50%;
+    width: 55%;
     position: relative;
     margin: 1% auto;
     padding: 10px;
-    background:rgba(255, 255, 255, 0.835);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(243,218,216,1) 0%, rgba(255,191,205,1) 35.4%, rgb(255, 62, 165) 90% );
     border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 

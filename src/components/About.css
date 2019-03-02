@@ -1,6 +1,4 @@
-body{
-    background: #fff;
-}
+
 #box
 {
     position:relative;
@@ -50,4 +48,16 @@ body{
     background:rgba(255, 255, 255, 0.9);
     border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+#Carousel{
+  position: relative;
+  align-content: center;
+  margin: 2% auto;
+  padding: 10px;
+  margin-left: 45px;
+  height: auto;
+  width:1600px;
+  background:rgba(255, 255, 255, 0.9);
+  border-radius:15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }

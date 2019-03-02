@@ -21,6 +21,16 @@ font-family:Pacifico;
 
   font-family: Kanit;
 }
+.text6{
+
+  color: white;
+  text-size-adjust: 100px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(243,218,216,1) 0%, rgba(255,191,205,1) 35.4%, rgb(255, 62, 165) 90% );
+ border-radius:5px; 
+ margin: 10px;
+ padding: 6px;
+  font-family: Kanit;
+}
 .text2{
 
   color: white;
@@ -95,8 +105,41 @@ margin-top: 20px;
 }
  
 .react-player {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
+}
+#container-notify
+{
+    position: relative;
+    margin: 1% auto;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.835);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(243,218,216,1) 0%, rgba(255,191,205,1) 35.4%, rgb(255, 62, 165) 90% );
+    border-radius:25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+#container-notify1
+{
+    position: relative;
+    margin: 1% auto;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.835);
+    border-radius:25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+ 
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
