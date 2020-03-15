@@ -1,93 +1,80 @@
-#container3
-{
+#container3 {
     position: relative;
     margin: 2% auto;
     height: 900px;
     width: 1400px;
-    background:rgba(255, 255, 255, 0.835);
-    border-radius:25px; 
+    background: rgba(255, 255, 255, 0.835);
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-#container4
-{
+#container4 {
     position: relative;
     margin: 2% auto;
     height: 1000px;
     width: 1000px;
-    background:rgba(255, 255, 255, 0.835);
-    border-radius:25px; 
+    background: rgba(255, 255, 255, 0.835);
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-#container7
-{
+#container7 {
     position: relative;
-    margin: 1% auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
+    margin: 1% 20px 10px;
+    padding: 20px 30px 25px;
     height: auto;
-    width:auto;
-    background:rgba(255, 255, 255, 0.9);
-    border-radius:15px; 
+    width: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-#container8
-{   
+#container8 {
     width: 450px;
     height: 450px;
-    margin-left: 50%;
+    margin-left: 5%;
+
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     align-items: center;
     padding: 2%;
     position: relative;
-    background:rgba(255, 255, 255, 0.9);
-    border-radius:15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
 }
-.btn{
+.btn {
     margin-top: 10px;
     width: 100%;
-    
+
 }
 #imageshop1 {
-    margin-right : 0px;
+    margin-right: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.size
-{
+.size {
     margin-top: 10px;
 }
-input[type="number"]
-{
- margin-bottom: 10px;
- width: 35px;
- height: 30px;
- background:#fff;
- border: none;
- border-radius: 10px;
- color: #fafffde0;
- font-family: sans-serif;
- font-weight: 500;
- text-transform: uppercase;
- margin-left: 10px;
- text-align: center;
+input[type="number"] {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #fafffde0;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 10px;
+    text-align: center;
 
 }
-.text4{
+.text4 {
     color: palevioletred;
     font-family: Kanit;
 }
-.button
-{
+.button {
     margin-bottom: 10px;
 }
-.outline-success
-{
+.outline-success {
     width: 10px;
 }

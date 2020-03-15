@@ -42,9 +42,9 @@
   #container7
 {
     position: relative;
-    margin: 1% auto;
+    margin: 1%;
     height: 560;
-    width:480;
+    width:450;
     background:rgba(255, 255, 255, 0.9);
     border-radius:15px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
